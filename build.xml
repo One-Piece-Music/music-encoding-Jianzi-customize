@@ -213,6 +213,9 @@
         <antcall target="build-rng">
             <param name="customization.path" value="${basedir}/customizations/mei-Neumes.xml"/>
         </antcall>
+        <antcall target="build-rng">
+            <param name="customization.path" value="${basedir}/customizations/mei-Jianzi.odd"/>
+        </antcall>
     </target>
 
     <target name="build-compiled-odds">
@@ -233,6 +236,9 @@
         </antcall>
         <antcall target="build-compiled-odd">
             <param name="customization.path" value="${basedir}/customizations/mei-Neumes.xml"/>
+        </antcall>
+        <antcall target="build-compiled-odd">
+            <param name="customization.path" value="${basedir}/customizations/mei-Jianzi.odd"/>
         </antcall>
     </target>
 

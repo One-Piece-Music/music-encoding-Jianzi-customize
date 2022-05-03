@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../validation/mei_odds.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../validation/mei_odds.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<specGrp xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0"  xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:rng="http://relaxng.org/ns/structure/1.0"  
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xml:id="module.MEI.jianzi">
+
+<moduleSpec ident="MEI.jianzi">
+	<desc>Jianzi notation (for Chinese Guqin) repertoire component declarations.</desc>
+</moduleSpec>
+
+<!-- macro specification -->
+<macroSpec ident="data.XIAN.jianzi" module="MEI.jianzi" type="dt"> <!--弦-->
+	<desc> Logical, that is, written, Xian(string) number attribute values for the Jianzi repertoire.
+	</desc>
+	<content>
+		<valList type="closed">
+			<valItem ident = "1">
+				<desc>The first Xian of Guqin.</desc>
+			</valItem>
+			<valItem ident = "2">
+				<desc>The second Xian of Guqin.</desc>
+			</valItem>
+			<valItem ident = "3">
+				<desc>The third Xian of Guqin.</desc>
+			</valItem>
+			<valItem ident = "4">
+				<desc>The fourth Xian of Guqin.</desc>
+			</valItem>
+			<valItem ident = "5">
+				<desc>The fifth Xian of Guqin.</desc>
+			</valItem>
+			<valItem ident = "6">
+				<desc>The sixth Xian of Guqin.</desc>
+			</valItem>
+			<valItem ident = "7">
+				<desc>The seventh Xian of Guqin.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+<macroSpec ident="data.HUI.jianzi" module="MEI.jianzi" type="dt"> <!--徽-->
+	<desc> Logical, that is, written, Hui position (the position on the string) attribute values for the Jianzi repertoire.
+	</desc>
+	<content>
+		<valList type="closed">
+			<valItem ident = "1">
+				<desc>The first Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "2">
+				<desc>The second Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "3">
+				<desc>The third Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "4">
+				<desc>The fourth Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "5">
+				<desc>The fifth Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "6">
+				<desc>The sixth Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "7">
+				<desc>The seventh Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "8">
+				<desc>The eight Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "9">
+				<desc>The ninth Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "10">
+				<desc>The tenth Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "11">
+				<desc>The eleventh Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "12">
+				<desc>The twelveth Hui position of Guqin.</desc>
+			</valItem>
+			<valItem ident = "13">
+				<desc>The thirteenth Hui position of Guqin.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+<macroSpec ident="data.FEN.jianzi" module="MEI.jianzi" type="dt"> <!--分-->
+	<desc> Logical, that is, written, FEN postition(fractional position between two Hui postition.
+	</desc>
+	<content>
+		<valList type="closed">
+			<valItem ident = "0">
+				<desc> equals to the current Hui position.</desc>
+			</valItem>
+			<valItem ident = "1">
+				<desc> current Hui position plus one-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "2">
+				<desc> current Hui position plus two-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "3">
+				<desc> current Hui position plus three-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "4">
+				<desc> current Hui position plus four-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "5">
+				<desc> current Hui position plus five-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "6">
+				<desc> current Hui position plus six-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "7">
+				<desc> current Hui position plus seven-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "8">
+				<desc> current Hui position plus eight-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+			<valItem ident = "9">
+				<desc> current Hui position plus nine-tenth of the distance between two Hui positions.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+<macroSpec ident="data.LEFTHANDFINGER.jianzi" module="MEI.jianzi" type="dt"> <!--左手手指-->
+	<desc> Logical, that is, written, the finger of the left hand attribute values for the Jianzi repertoire.
+	</desc>
+	<content>
+		<valList type="closed">
+			<valItem ident="Da"> <!--大指-->
+				<desc> The thumb finger of left hand.</desc>
+			</valItem>
+			<valItem ident="Shi"> <!--食指-->
+				<desc> The index finger of left hand.</desc>
+			</valItem>
+			<valItem ident="Zhong"> <!--中指-->
+				<desc> The middle finger of left hand.</desc>
+			</valItem>
+			<valItem ident="Ming"> <!--名指-->
+				<desc> The ring finger of left hand.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+<macroSpec ident="data.LEFTHANDTECHNIQUE.jianzi" module="MEI.jianzi" type="dt"> <!--左手指法-->
+	<desc> Logical, that is, written, the preform technique of the left hand attribute values for the jianzi repertoire.
+	</desc>
+	<content>
+		<valList type="semi"> <!-- only include the most common used ones, others need to be complete more techniques in the future -->
+			<valItem ident="Gui"> <!--跪-->
+				<desc> Flex the ring finger of the left hand and press the string with the outer side of the last joint.</desc>
+			</valItem>
+			<valItem ident="Chuo"> <!--绰-->
+				<desc> The left hand moves to the right to the desired pitch thus creating an upward glissando.</desc>
+			</valItem>
+			<valItem ident="Zhu"> <!--注-->
+				<desc> The left hand moves to the left of the desired pitch thus creating a sliding tone.</desc>
+			</valItem>
+			<valItem ident="Yin"> <!--吟-->
+				<desc> The left hand presses the string and makes a continuous swing on both sides of the position, i.e. the vibrato of a general string instrument.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+<macroSpec ident="data.RIGHTHANDTECHNIQUE.jianzi" module="MEI.jianzi" type="dt"> <!--右手指法-->
+	<desc> Logical, that is, written, the perform technique of the right hand attribute values for the jianzi repertoire.
+	</desc>
+	<content>
+		<valList type="semi"> <!-- only include the most common used ones, others need to be complete more techniques in the future -->
+			<valItem ident= "Tuo"> <!--托-->
+				<desc> Right hand thumb plucks the string outward.</desc>
+			</valItem>
+			<valItem ident= "Pi"> <!--劈-->
+				<desc> Right hand thumb plucks the string inward.</desc>
+			</valItem>
+			<valItem ident= "Tiao"> <!--挑-->
+				<desc> Right hand index finger plucks the string outward.</desc>
+			</valItem>
+			<valItem ident= "Mo"> <!--抹-->
+				<desc> Right hand index finger plucks the string inward.</desc>
+			</valItem>
+			<valItem ident= "Ti"> <!--剔-->
+				<desc> Right hand middle finger plucks the string outward.</desc>
+			</valItem>
+			<valItem ident= "Gou"> <!--勾-->
+				<desc> Right hand middle finger plucks the string inward.</desc>
+			</valItem>
+			<valItem ident= "Zhai"> <!--摘-->
+				<desc> Right hand ring finger plucks the string outward.</desc>
+			</valItem>
+			<valItem ident= "Da"> <!--打-->
+				<desc> Right hand ring finger plucks the string inward.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+<macroSpec ident="data.PERFORMITEM.jianzi" module="MEI.jianzi" type="dt"> <!--演奏符号-->
+	<desc> Logical, that is, written, the perform item attribute values for jianzi repertoire.
+	</desc>
+	<content>
+		<valList type="semi"> <!-- only include the most common used ones, others need to be complete more techniques in the future -->
+			<valItem ident="Shaoxi"> <!-- 少息 -->
+				<desc> Small pause.</desc>
+			</valItem>
+			<valItem ident="Jitan"> <!-- 急弹 -->
+				<desc> Perform quickly.</desc>
+			</valItem>
+			<valItem ident="Huantan"> <!-- 缓弹 -->
+				<desc> Perform slowly.</desc>
+			</valItem>
+			<valItem ident="Qingtan"> <!-- 轻弹 -->
+				<desc> Perform slighly.</desc>
+			</valItem>
+			<valItem ident="Zhongtan"> <!-- 重弹 -->
+				<desc> Perform hardly.</desc>
+			</valItem>
+			<valItem ident="Quzhong"> <!-- 曲终 -->
+				<desc> The end.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+<macroSpec ident="data.TUNING.jianzi" module="MEI.jianzi" type="dt"> <!--调-->
+	<desc> Logical, that is, written, the tuning attribute values for jianzi repertoire.
+	</desc>
+	<content>
+		<valList type="semi"> <!-- only include the most common used ones, others need to be complete more techniques in the future -->
+			<valItem ident="Huangzhong"> <!-- 黄钟 -->
+				<desc> Equals to C major.</desc>
+			</valItem>
+			<valItem ident="Wushe"> <!-- 无射 -->
+				<desc> Equals to B flat major.</desc>
+			</valItem>
+			<valItem ident="Yize"> <!-- 夷则 -->
+				<desc> Equals to G major.</desc>
+			</valItem>
+			<valItem ident="Zhonglv"> <!-- 仲吕 -->
+				<desc> Equals to F major.</desc>
+			</valItem>
+			<valItem ident="Jiazhong"> <!-- 夹钟 -->
+				<desc> Equals to E flat major.</desc>
+			</valItem>
+		</valList>
+	</content>
+</macroSpec>
+
+<!-- class specification -->
+<classSpec ident="att.Puzi.log" module="MEI.jianzi" type="atts">
+    <desc>Logical domain attributes that describe the properties of a Puzi in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Puzi.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a Puzi in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Puzi.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a Puzi in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Puzi.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a Puzi in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.RightHand.log" module="MEI.jianzi" type="atts">
+    <desc>Logical domain attributes that describe the properties of a right hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.RightHand.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a right hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.RightHand.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a right hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.RightHand.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a right hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.LeftHand.log" module="MEI.jianzi" type="atts">
+    <desc>Logical domain attributes that describe the properties of a left hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.LeftHand.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a left hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.LeftHand.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a left hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.LeftHand.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a left hand gesture in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.RightHandTechnique.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a right hand technique in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.RightHandTechnique.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a right hand technique in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.RightHandTechnique.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a right hand technique in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.LeftHandTechnique.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a left hand technique in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.LeftHandTechnique.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a left hand technique in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.LeftHandTechnique.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a left hand technique in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.LeftHandFinger.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a left hand finger in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.LeftHandFinger.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a left hand finger in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.LeftHandFinger.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a left hand finger in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.Xian.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a Xian in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Xian.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a Xian in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Xian.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a Xian in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.Hui.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a Hui in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Hui.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a Hui in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Hui.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a Hui in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.Item.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of a perform item in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Item.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of a perform item in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Item.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of a perform item in the jianzi repertoire.</desc>
+</classSpec>
+
+<classSpec ident="att.Tuning.ges" module="MEI.jianzi" type="atts">
+    <desc>Gestural domain attributes that describe the properties of tuning in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Tuning.vis" module="MEI.jianzi" type="atts">
+    <desc>Visual domain attributes that describe the properties of tuning in the jianzi repertoire.</desc>
+</classSpec>
+<classSpec ident="att.Tuning.anl" module="MEI.jianzi" type="atts">
+    <desc>Analytical domain attributes that describe the properties of tuning in the jianzi repertoire.</desc>
+</classSpec>
+
+<!-- element specification -->
+<elementSpec ident="Puzi" module="MEI.jianzi"> <!--谱字-->
+	<desc> The basic building block of Jianzi repertoire.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.Puzi.log" />
+		<memberOf key="att.Puzi.ges" />
+		<memberOf key="att.Puzi.vis" />
+		<memberOf key="att.Puzi.anl" />
+	</classes>
+	<content>
+		<rng:oneOrMore>
+			<rng:choice>
+				<rng:ref name="RightHand" />
+				<rng:ref name="LeftHand" />
+			</rng:choice>
+		</rng:oneOrMore>
+	</content>
+	<remarks>
+		<p> Guqin Jianzi repertoire is gesture based notation system. Each Puzi contains right hand gesture and left hand gesture.
+		</p>
+	</remarks>
+</elementSpec>
+
+<elementSpec ident="RightHand" module="MEI.jianzi"> <!--右手-->
+	<desc> The right hand gesture of Puzi.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.RightHand.log" />
+		<memberOf key="att.RightHand.ges" />
+		<memberOf key="att.RightHand.vis" />
+		<memberOf key="att.RightHand.anl" />
+	</classes>
+	<content>
+		<rng:zeroOrMore>
+			<rng:choice>
+				<rng:ref name="RightHandTechnique" />
+				<rng:ref name="Xian" />
+			</rng:choice>
+		</rng:zeroOrMore>
+	</content>
+	<remarks>
+		<p> The gesture of right hand in each Puzi contains the number of Xian(string) and the perform technique of right hand.
+		</p>
+	</remarks>
+</elementSpec>
+
+<elementSpec ident="LeftHand" module="MEI.jianzi"> <!--左手-->
+	<desc> The left hand gesture of Puzi.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.LeftHand.log" />
+		<memberOf key="att.LeftHand.ges" />
+		<memberOf key="att.LeftHand.vis" />
+		<memberOf key="att.LeftHand.anl" />
+	</classes>
+	<content>
+		<rng:zeroOrMore>
+			<rng:choice>
+				<rng:ref name="LeftHandTechnique" />
+				<rng:ref name="LeftHandFinger" />
+				<rng:ref name="Xian" />
+				<rng:ref name="HuiPosition" />
+			</rng:choice>
+		</rng:zeroOrMore>
+	</content>
+	<remarks>
+		<p> The gesture of left hand in each Puzi contains the number of Xian(string), the perform technique of left hand, the Hui(string position) of the Xian, and the finger of the left hand.
+		</p>
+	</remarks>
+</elementSpec>
+
+<elementSpec ident="RightHandTechnique" module="MEI.jianzi"> <!--右手技法-->
+	<desc> The right hand perform technique of Puzi.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.RightHandTechnique.ges" />
+		<memberOf key="att.RightHandTechnique.vis" />
+		<memberOf key="att.RightHandTechnique.anl" />
+	</classes>
+	<content>
+		<rng:empty/>
+	</content>
+	<attList>
+		<attDef ident="RightTechnique" usage="opt">
+			<desc> The preform technique Jianzi of right hand. </desc>
+			<datatype>
+				<rng:ref name="data.RIGHTHANDTECHNIQUE.jianzi" />
+			</datatype>
+		</attDef>
+	</attList>
+</elementSpec>
+
+<elementSpec ident="LeftHandTechnique" module="MEI.jianzi"> <!--左手技法-->
+	<desc> The left hand perform technique of Puzi.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.LeftHandTechnique.ges" />
+		<memberOf key="att.LeftHandTechnique.vis" />
+		<memberOf key="att.LeftHandTechnique.anl" />
+	</classes>
+	<content>
+		<rng:empty/>
+	</content>
+	<attList>
+		<attDef ident="LeftTechnique" usage="opt">
+			<desc> The preform technique Jianzi of left hand. </desc>
+			<datatype>
+				<rng:ref name="data.LEFTHANDTECHNIQUE.jianzi" />
+			</datatype>
+		</attDef>
+	</attList>
+</elementSpec>
+
+<elementSpec ident="LeftHandFinger" module="MEI.jianzi"> <!--左手手指-->
+	<desc> The left hand finger of Puzi.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.LeftHandFinger.ges" />
+		<memberOf key="att.LeftHandFinger.vis" />
+		<memberOf key="att.LeftHandFinger.anl" />
+	</classes>
+	<content>
+		<rng:empty/>
+	</content>
+	<attList>
+		<attDef ident="LeftFinger" usage="opt">
+			<desc> The name of left hand finger. </desc>
+			<datatype>
+				<rng:ref name="data.LEFTHANDFINGER.jianzi" />
+			</datatype>
+		</attDef>
+	</attList>
+</elementSpec>
+<elementSpec ident="Xian" module="MEI.jianzi"> <!--弦位-->
+	<desc> The number of Xian(string number) in Puzi.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.Xian.ges" />
+		<memberOf key="att.Xian.vis" />
+		<memberOf key="att.Xian.anl" />
+	</classes>
+	<content>
+		<rng:empty/>
+	</content>
+	<attList>
+		<attDef ident="XianNumber" usage="opt">
+			<desc> The number of Xian. </desc>
+			<datatype>
+				<rng:ref name="data.XIAN.jianzi" />
+			</datatype>
+		</attDef>
+	</attList>
+</elementSpec>
+
+<elementSpec ident="HuiPosition" module="MEI.jianzi"> <!--徽位-->
+	<desc> The specific Hui position in Puzi.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.Hui.ges" />
+		<memberOf key="att.Hui.vis" />
+		<memberOf key="att.Hui.anl" />
+	</classes>
+	<content>
+		<rng:empty/>
+	</content>
+	<attList>
+		<attDef ident="Hui" usage="opt">
+			<desc> The number of Hui. </desc>
+			<datatype>
+				<rng:ref name="data.HUI.jianzi" />
+			</datatype>
+		</attDef>
+		<attDef ident="Fen" usage="opt">
+			<desc> The number of Fen. </desc>
+			<datatype>
+				<rng:ref name="data.FEN.jianzi" />
+			</datatype>
+		</attDef>
+	</attList>
+</elementSpec>
+
+<elementSpec ident="PerformItem" module="MEI.jianzi"> <!--谱字-->
+	<desc> The Perform item in Jianzi repertoire.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.Item.ges" />
+		<memberOf key="att.Item.vis" />
+		<memberOf key="att.Item.anl" />
+	</classes>
+	<content>
+		<rng:empty/>
+	</content>
+	<attList>
+		<attDef ident="item" usage="opt">
+			<desc> The item name. </desc>
+			<datatype>
+				<rng:ref name="data.PERFORMITEM.jianzi" />
+			</datatype>
+		</attDef>
+	</attList>
+</elementSpec>
+
+<elementSpec ident="Tuning" module="MEI.jianzi"> <!--谱字-->
+	<desc> The tuning in Jianzi repertoire.</desc>
+	<classes> <!--need to be complete-->
+		<memberOf key="att.common" />
+		<memberOf key="att.Tuning.ges" />
+		<memberOf key="att.Tuning.vis" />
+		<memberOf key="att.Tuning.anl" />
+	</classes>
+	<content>
+		<rng:empty/>
+	</content>
+	<attList>
+		<attDef ident="Tune" usage="opt">
+			<desc> The tuning name. </desc>
+			<datatype>
+				<rng:ref name="data.TUNING.jianzi" />
+			</datatype>
+		</attDef>
+	</attList>
+</elementSpec>
+
+
+</specGrp>
